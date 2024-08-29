@@ -1,0 +1,35 @@
+{
+  "name": "action-forge",
+  "version": "0.0.1",
+  "description": "CLI tool for generating GitHub Actions",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "generate": "plop"
+  },
+  "bin": {
+    "action-forge": "./index.js"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevOpsConsortium/action-forge.git"
+  },
+  "keywords": [
+    "devops-consortium",
+    "github",
+    "actions",
+    "generator"
+  ],
+  "author": "Sebastien Vermeille <sebastien.vermeille@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/DevOpsConsortium/action-forge/issues"
+  },
+  "homepage": "https://github.com/DevOpsConsortium/action-forge#readme",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "plop": "^4.0.1"
+  },
+  "peerDependencies": { "inquirer": "9.3.5" }
+}
