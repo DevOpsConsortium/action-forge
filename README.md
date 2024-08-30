@@ -10,7 +10,7 @@ npm install -g action-forge
 
 And run
 ```bash
-action-forge generate
+action-forge
 ```
 
 Voila!

@@ -1,1 +1,30 @@
-some config
+repos:
+  - repo: meta
+    hooks:
+      - id: check-hooks-apply
+      - id: check-useless-excludes
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: f71fa2c1f9cf5cb705f73dffe4b21f7c61470ba9  # v4.4.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: c9ea83146232fb263effdfe6f222d87f5395b27a # v0.39.0
+    hooks:
+      - id: markdownlint
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 20447075e31543a8b125f2df18d75f3b5e7d4d2e  # 0.22.0
+    hooks:
+      - id: check-github-actions
+        files: .*/action.ya?ml
+      - id: check-github-workflows
+  - repo: https://github.com/gruntwork-io/pre-commit
+    rev: 5341f388c2a962d3bc66e075f00b80ab45b15f24 # v0.1.20
+    hooks:
+      - id: shellcheck
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: 02808f45d038526bfcceebcbf6421c1047997ff9 # v8.18.4
+    hooks:
+      - id: gitleaks

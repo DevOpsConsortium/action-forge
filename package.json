@@ -28,8 +28,11 @@
   },
   "homepage": "https://github.com/DevOpsConsortium/action-forge#readme",
   "dependencies": {
+    "gitignore.io": "^0.1.7",
     "minimist": "^1.2.8",
     "plop": "^4.0.1"
   },
-  "peerDependencies": { "inquirer": "9.3.5" }
+  "peerDependencies": {
+    "inquirer": "9.3.5"
+  }
 }

@@ -9,3 +9,8 @@ To install the `bin` command locally simply run:
 `npm link`
 
 and then you can run `action-forge` command.
+
+
+## Prompts
+
+Prompts are using Inquirer.js prompts: https://github.com/SBoudrias/Inquirer.js/blob/main/packages/inquirer/README.md#prompt-types
